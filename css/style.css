@@ -242,7 +242,6 @@ body .bottom .right .rtop #controls .action-btn-big {
   background: var(--play-color);
   -webkit-box-shadow: 0 1px 5px var(--shadow-color2);
           box-shadow: 0 1px 5px var(--shadow-color2);
-  padding: 10% 13%;
   margin: 0 15px;
   border-radius: 50%;
   -webkit-transition: ease 0.2s;

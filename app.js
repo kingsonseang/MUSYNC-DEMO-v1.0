@@ -162,3 +162,4 @@ like.addEventListener('dblclick', () => {
 like.addEventListener('click', () => {
     like.style.color = '#3A3E4B';
 });
+

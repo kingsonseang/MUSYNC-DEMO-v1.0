@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- contians the nav and -->
+    <div class="top">
+
+        <!-- the nav section -->
+        <section class="nav">
+
+            <!-- home icon to move back to home in a playlist -->
+            <div class="nav-ico">
+                <span class="iconify" data-icon="ci:home-fill" data-inline="false"></span>
+                <p>
+                    Home
+                </p>
+            </div>
+
+            <!-- the search icon to show the search bar -->
+            <div class="nav-ico">
+                <span class="iconify" data-icon="clarity:search-line" data-inline="false"></span>
+                <p>
+                    Search
+                </p>
+            </div>
+
+        </section>
+
+        <!-- the songs panel section, playlist and a list of all the songs is displayed here -->
+        <section class="songsPanel">
+
+            <!-- this changes dynamicly depending on either the music or video section -->
+            <h1 class="heading">
+                Music
+            </h1>
+
+            <!-- playlist contianer -->
+            <div class="playlistcon">
+
+                <!-- playlist heading left text 90deg -->
+                <div class="playlistHeading deg90">
+                    <p>
+                        Playlist
+                    </p>
+                    <span class="iconify pli" data-icon="fluent:square-multiple-20-regular" data-inline="false"></span>
+                </div>
+
+                <!-- playlist scroll group -->
+                <div class="playlists">
+                    <div class="playscroll">
+                        <div class="playlist">
+                            <img src="" alt="" class="playlistimg">
+                            <p class="imgtext"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- playlist ends -->
+
+            <!-- Song category, all songs are dispalyed here -->
+            <div class="songCat">
+
+                <div class="songHeading deg90">
+                    <span class="iconify" data-icon="bi:dot" data-inline="false"></span>
+                    <p>
+                        Songs
+                    </p>
+                </div>
+
+                <div class="songsCon">
+
+                    <!-- song -->
+                    <div class="song">
+
+                        <!-- song image -->
+                        <img src="#" alt="">
+
+                        <!-- song detials and info -->
+                        <div class="songDetails">
+                            <p class="songName"></p>
+                            <p class="songArtist"></p>
+                        </div>
+
+                        <p class="info"></p>
+
+                        <span class="iconify heart" data-icon="bi:suit-heart" data-inline="false"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- contials the current audio info and audio controls, the play screen on click -->
+    <div class="bottom">
+
+        <div class="left">
+            <!-- current song image -->
+            <img src="./images/Black Catcher.png" alt="" id="cover">
+            
+        </div>
+
+        <div class="right">
+
+            <div class="rtop">
+
+                <div id="controls">
+
+                    <audio src="./music/Black Catcher.mp3" id="audio"></audio>
+
+                    <!-- prev button -->
+                    <button id="prev" class="action-btn">
+                        <span class="iconify" data-icon="fluent:previous-24-regular" data-inline="false"></span>
+                    </button>
+
+                    <!-- play btn -->
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+
+                    <!-- next button -->
+                    <button id="next" class="action-btn">
+                        <span class="iconify" data-icon="fluent:next-16-regular" data-inline="false"></span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="rbottom">
+
+                <div class="currentSongDetials">
+                    <div>
+                        <div id="Title">i am doo</div>
+                        <div id="Artist">Vickeblanka</div>
+                    </div>
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <!-- th seek bar and time display -->
+                <div class="seekCon">
+
+                    <!-- elapsed time -->
+                    <p id="elapsed">1:20</p>
+
+                    <!-- progress bar -->
+                    <div id="progressCon">
+                        <div id="progress"></div>
+                    </div>
+
+                    <!-- total time -->
+                    <p id="duration">4:15</p>
+
+                </div>
+
+                <div class="volume">
+                    <i id="mute" class="fas fa-volume-off"></i>
+                    <!-- the volume bar -->
+                    <div class="volumeBarCon">
+                        <div id="volumeBar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./script.js"></script>
+</body> 
+</html>

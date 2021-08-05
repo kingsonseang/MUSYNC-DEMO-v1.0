@@ -1,0 +1,23 @@
+font awesome icons
+
+    <i class="fas fa-home"></i>
+    <i class="fas fa-search"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-play"></i>
+    <i class="fas fa-play-circle"></i>
+    <i class="fas fa-step-forward"></i>
+    <i class="fas fa-step-backward"></i>
+    <i class="far fa-heart"></i>
+    <i class="fas fa-pause-circle"></i>
+    <i class="fas fa-pause"></i>
+    <i class="fas fa-volume-up"></i>
+    <i class="fas fa-volume-off"></i>
+
+
+iconify icons
+    <span class="iconify" data-icon="ci:home-fill" data-inline="false"></span>
+    <span class="iconify" data-icon="clarity:search-line" data-inline="false"></span>
+    <span class="iconify" data-icon="fluent:square-multiple-20-regular" data-inline="false"></span>
+    <span class="iconify heart" data-icon="bi:suit-heart" data-inline="false"></span>
+    <span class="iconify" data-icon="fluent:previous-24-regular" data-inline="false"></span>
+    <span class="iconify" data-icon="fluent:next-16-regular" data-inline="false"></span>

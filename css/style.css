@@ -97,6 +97,7 @@ body .top .nav .nav-ico p {
   font-size: 20px;
   padding-left: 10px;
   color: var(--text-color2);
+  pointer-events: none;
 }
 
 body .top .songsPanel {
@@ -112,9 +113,35 @@ body .top .songsPanel .deg90 {
           transform: rotate(-90deg);
 }
 
-body .top .songsPanel .heading {
+body .top .songsPanel .ntop {
+  width: 100%;
+  height: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .top .songsPanel .ntop .heading {
   font-size: 60px;
   padding-left: 3%;
+}
+
+body .top .songsPanel .ntop .searchbar {
+  margin-right: 2.5%;
+  background: var(--bg-col0r1);
+  border-radius: 10px;
+  height: 60%;
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  color: var(--text-hilyt);
 }
 
 body .top .songsPanel .playlistcon {
@@ -481,5 +508,9 @@ body .bottom .right .rbottom #volume #volumeBarCon #volumeBar {
   border: none;
   color: var(--text-hilyt);
   font-size: 20px;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

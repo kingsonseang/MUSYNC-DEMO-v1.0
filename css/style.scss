@@ -91,6 +91,7 @@ body {
                     font-size: 20px;
                     padding-left: 10px;
                     color: var(--text-color2);
+                    pointer-events: none;
                 }
             }
         }
@@ -107,9 +108,29 @@ body {
                 transform: rotate(-90deg);
             }
 
-            .heading {
-                font-size: 60px;
-                padding-left: 3%;
+            .ntop {
+                width: 100%;
+                height: 8%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .heading {
+                    font-size: 60px;
+                    padding-left: 3%;
+                }
+
+                .searchbar {
+                    margin-right: 2.5%;
+                    background: var(--bg-col0r1);
+                    border-radius: 10px;
+                    height: 60%;
+                    width: 70%;
+                    border: none;
+                    outline: none;
+                    padding: 0 15px;
+                    color: var(--text-hilyt);
+                }
             }
 
 
@@ -410,4 +431,8 @@ body {
         color: var(--text-hilyt);
         font-size: 20px;
     }
+}
+
+.none {
+    display: none;
 }

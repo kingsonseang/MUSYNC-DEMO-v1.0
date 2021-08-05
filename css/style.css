@@ -194,7 +194,7 @@ body .top .songsPanel .songCat {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 58%;
+  height: 58.5%;
 }
 
 body .top .songsPanel .songCat ::-webkit-scrollbar {

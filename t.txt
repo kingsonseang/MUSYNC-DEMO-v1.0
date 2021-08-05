@@ -12,6 +12,7 @@ font awesome icons
     <i class="fas fa-pause"></i>
     <i class="fas fa-volume-up"></i>
     <i class="fas fa-volume-off"></i>
+    <i class="fas fa-volume-mute"></i>
 
 
 iconify icons

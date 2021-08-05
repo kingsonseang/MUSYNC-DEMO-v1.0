@@ -11,6 +11,7 @@ const progress = document.getElementById('progress')
 const progressContainer = document.getElementById('progressCon')
 const elapsed = document.getElementById('elapsed')
 const totalduration = document.getElementById('tduration')
+const like = document.getElementById('like')
 
 
 const songs = ['Black Catcher', '321', 'lemonade', 'crabRave']
@@ -154,3 +155,10 @@ function mute() {
 
 mutebtn.addEventListener('click', mute)
 
+like.addEventListener('dblclick', () => {
+    like.style.color = 'green';
+});
+
+like.addEventListener('click', () => {
+    like.style.color = '#3A3E4B';
+});

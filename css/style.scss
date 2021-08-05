@@ -14,7 +14,7 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 
-:root {
+body {
     --bg-col0r1: #323643;
     --bg-col0r2: #1f2128;
     --text-hilyt: #ffffff;
@@ -29,7 +29,7 @@ p {
     --control-color: #ffffff;
 }
 
-:root.dark {
+body.dark {
     --bg-col0r1: #000000;
     --bg-col0r2: #1D1D1D;
     --text-hilyt: #ffffff;
@@ -44,7 +44,7 @@ p {
     --control-color: #ffffff;
 }
 
-:root.light {
+body.light {
     --bg-col0r1: #fefefefe;
     --bg-col0r2: #C7D5DD;
     --text-hilyt: #303030;
@@ -63,6 +63,7 @@ body {
     width: 100%;
     height: calc(var(--vh, 1vh) * 100);
     background: var(--bg-col0r1);
+    overflow: hidden;
 
 
     // top div
@@ -131,7 +132,7 @@ body {
                      }
 
                      .pli {
-                         font-size: 20px;
+                         font-size: 40px;
                      }
                 }
 
@@ -140,6 +141,40 @@ body {
                 .playlists {
                     width: 100%;
                     height: 100%;
+                    ::-webkit-scrollbar {
+                        display: none;
+                    }
+                    
+
+                    .playscroll {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        overflow: scroll;
+                        white-space: nowrap;
+                        position: relative;
+                        
+                        
+
+                        .playlist {
+                            height: 100%;
+                            margin-left: 20px;
+
+                            .playlistimg {
+                                height: 100%;
+                                width: 250px;
+                                object-fit: cover;border-radius: 16px;
+                                
+                            }
+
+                            .imgtext {
+                                position: absolute;
+                                left: 35px;
+                                bottom: 15px;
+                                z-index: 5;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -149,7 +184,22 @@ body {
                 align-items: center;
                 width: 100%;
                 height: 59%;
-                background: wheat;
+
+                ::-webkit-scrollbar {
+                    width: 5px;
+                    border-radius: 5px;
+                }
+        
+                ::-webkit-scrollbar-thumb {
+                    background: var(--slider-color);
+                    width: 5px;
+                    border-radius: 5px;
+                }
+        
+                ::-webkit-scrollbar-track {
+                    width: 5px;
+                    background: none;
+                }
 
                 .songHeading {
                     display: flex;
@@ -159,6 +209,39 @@ body {
                     width: 14%;
                     height: 20%;
                     font-size: 16px;
+                }
+
+                .songsCon {
+                    width: 100%;
+                    height: 100%;
+                    padding: 2% 0 0 0;
+                    overflow-y: scroll;
+
+                    .song {
+                        width: 100%;
+                        height: 80px;
+                        padding: 0 2.5% 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+                        .fld {
+                            display: flex;
+                            align-items: center;
+
+                            .songDetials {
+                                margin-left: 20px;
+                            }
+                        }
+
+                        img {
+                            height: 75.12px;
+                            width: 72.51px;
+                            border-radius: 1em;
+                            object-fit: cover;
+                        }
+                    }
                 }
             }
         }
@@ -308,5 +391,23 @@ body {
 
             }
         }
+    }
+}
+
+
+.dropdown {
+    width: 10%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    button {
+        height: 30%;
+        background: var(--bg-col0r2);
+        outline: none;
+        border: none;
+        color: var(--text-hilyt);
+        font-size: 20px;
     }
 }

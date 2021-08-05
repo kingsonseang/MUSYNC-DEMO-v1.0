@@ -11,4 +11,16 @@ window.addEventListener('resize', () => {
 
 });
 
+const darkbtn = document.querySelector('.dark')
+const lightbtn = document.querySelector('.light')
+
+
+darkbtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark")
+
+})
+
+lightbtn.addEventListener("click", function () {
+  document.body.classList.toggle("light")
+})
 
